@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">PACE</h1>
+        <div class="nav-links" id="navLinks">
+            <span class="icon" onclick="hidemenu()">&#10005;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="fee.html">Fees</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" target="_top">Contact</a></li>
+            </ul>
+        </div>
+        <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+
+    <img src="./assets/bg.png" alt="">
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <section class="location">
+                    <div class="map">
+                        <img src="./assets/bg_login.jpg" alt="">
+                    </div>
+                </section>
+            </div>
+            <div class="contact-col">
+                <h1 style="text-decoration: underline;text-decoration-color:#d83232;">Admission form</h1>
+                <form action="https://formspree.io/f/xrgrdkry" id="contact-form" method="POST">
+                    <label for="dob">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter your Name" required>
+                    <label for="dob">Email Id</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter your Email" required>
+                    <label for="dob">Mobile Number</label>
+                    <input type="number" name="phone" class="input" id="phone" placeholder="Enter the Mobile number"
+                        required />
+
+                    <div class="input_wrap">
+                        <label>Gender</label>
+                        <div class="input_radio">
+                            <div class="input_radio_item">
+                                <input type="radio" id="male" name="gender" class="radio" value="male" checked />
+                                <label for="male" class="radio_mark">
+                                    <ion-icon class="i" name="male-sharp"></ion-icon>
+                                    Male</label>
+                            </div>
+                            <div class="input_radio_item">
+                                <input type="radio" id="female" name="gender" class="radio" value="female" />
+                                <label for="female" class="radio_mark">
+                                    <ion-icon class="i" name="female-sharp"></ion-icon>
+                                    Female</label>
+                            </div>
+                            <div class="input_radio_item">
+                                <input type="radio" id="others" name="gender" class="radio" value="others" />
+                                <label for="others" class="radio_mark">
+                                    <ion-icon class="i" name="male-female-sharp"></ion-icon>
+                                    Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" class="input" id="dob" required />
+
+                    <div class="input_wrap">
+                        <label for="course">Course</label>
+                        <div class="input_item">
+                            <i class="fa fa-caret-square-o-down" aria-hidden="true" id="icon"></i>
+                            <select id="course" name="cars" class="input" required>
+                                <option value="select">Select the Course</option>
+                                <option value="bca">B-Tech</option>
+                                <option value="bscit">MBA</option>
+                                <option value="bscca&it">Polytechnic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="file">12th Marksheet</label>
+                    <div class="input_item">
+                        
+                        <input type="file" name="file" class="input" id="file" required />
+
+                        <label for="password">Password</label>
+                        <div class="input_item">
+                             
+                            <input type="password" name="password" class="input" id="password"
+                                placeholder="Enter the password" />
+
+                            <label for="confirmpassword">Confirm Password</label>
+                            <div class="input_item">
+                                
+                                <input type="password" name="confirm password" class="input" id="confirmpassword"
+                                    placeholder="Enter the confirm password" />
+
+
+                                <input type="submit" class="hero-btn" value="Register Now" />
+
+                                <div></div>
+
+                                <input type="reset" class="hero-btn" value="Clear" />
+                                <!--<button type="submit" class="hero-btn red-btn submit-btn">Send Message</button>-->
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo"><img src="./assets/logo.png" alt=""></h1>
+
+            <h2 class="nav__title">Contact</h2>
+            <p>+91-9581456310</p>
+
+            <address>
+                NH-5, near Valluramma Temple, Ongole, Andhra Pradesh 523272<br>
+
+                <a class="hero-btn " href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">DOWNLOAD</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">
+                            Student Hand Book</a>
+                    </li>
+                    <li>
+                        <a href="#">HR Policy Book</a>
+                    </li>
+                    <li>
+                        <a href="#">Organisation Chart</a>
+                    </li>
+                    <li>
+                        <a href="#">College Brochure</a>
+                    </li>
+                    <li>
+                        <a href="#">Job Application</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Alternative Ads</a>
+                    </li>
+                    <li>
+                        <a href="#">Institutional DevelopmentPlan</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <h2 class="nav__title">QUICK LINKS</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">
+                            Academic Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Courses Offered</a>
+                    </li>
+                    <li>
+                        <a href="#">Online Fee Payment</a>
+                    </li>
+                    <li>
+                        <a href="#">Exam Results</a>
+                    </li>
+                    <li>
+                        <a href="#">RTI</a>
+                    </li>
+                </ul>
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy;PACE INSTITUTE OF TECHNOLOGY AND SCIENCES (PACE ITS).</p>
+        </div>
+        <div class="icons">
+            <p class="nav__title">Follow Us On</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
